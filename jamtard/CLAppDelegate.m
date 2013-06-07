@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "CLCatMatrixView.h"
 
-#define OPENCV
+//#define OPENCV 1
 
 #ifdef OPENCV
 #import <opencv/cv.h>

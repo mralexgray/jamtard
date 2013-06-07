@@ -32,13 +32,14 @@
 -(NSImage *) captureWindowWithTitle: (NSString *) title {
 	if (!m_windowList)
 		[self updateWindowList];
-	
+	NSLog(@"window dict: %@",m_windowList);
 	for (NSDictionary *elm in m_windowList) {
+		
 		if ([[[elm objectForKey: @"kCGWindowName"] lowercaseString] isEqualToString: [title lowercaseString]]) {
-			CGImageRef windowImage = CGWindowListCreateImage(CGRectNull, 
-															 kCGWindowListOptionIncludingWindow, 
-															 [[elm objectForKey: @"kCGWindowNumber"] integerValue], 
+			CGImageRef windowImage = CGWindowListCreateImage(CGRectNull, kCGWindowListOptionIncludingWindow, 
+															 [elm[@"kCGWindowNumber"]intValue], 
 															 kCGWindowImageDefault);
+			
 			NSImage *img =  [[NSImage alloc] initWithCGImage: windowImage 
 												size: NSMakeSize(CGImageGetWidth(windowImage), CGImageGetHeight(windowImage))];
 			CGImageRelease(windowImage);
