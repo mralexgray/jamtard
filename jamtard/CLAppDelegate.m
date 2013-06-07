@@ -10,6 +10,8 @@
 #import <QuartzCore/QuartzCore.h>
 #import "CLCatMatrixView.h"
 
+#define OPENCV
+
 #ifdef OPENCV
 #import <opencv/cv.h>
 #import "NSImage+OpenCV.h"

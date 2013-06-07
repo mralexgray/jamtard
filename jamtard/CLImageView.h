@@ -10,6 +10,6 @@
 
 @interface CLImageView : NSView
 
-@property (readwrite, nonatomic) NSImage *image;
+@property (weak, readwrite, nonatomic) NSImage *image;
 
 @end

@@ -12,9 +12,9 @@
 
 @interface CLAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet CLImageView *imageView;
-@property (assign) IBOutlet NSProgressIndicator *spinner;
+@property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet CLImageView *imageView;
+@property (weak) IBOutlet NSProgressIndicator *spinner;
 
 - (IBAction) findWindow:(id)sender;
 - (IBAction) singleShot:(id)sender;

@@ -9,6 +9,6 @@
 #import <Cocoa/Cocoa.h>
 
 @interface CLCatMatrixView : NSView
-@property NSArray *catRects;
+@property (weak) NSArray *catRects;
 
 @end

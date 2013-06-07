@@ -313,6 +313,7 @@
 		35583A47151A5661001A338C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jamtard/jamtard-Prefix.pch";
 				INFOPLIST_FILE = "jamtard/jamtard-Info.plist";
@@ -324,6 +325,7 @@
 		35583A48151A5661001A338C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "jamtard/jamtard-Prefix.pch";
 				INFOPLIST_FILE = "jamtard/jamtard-Info.plist";

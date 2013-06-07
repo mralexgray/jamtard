@@ -24,7 +24,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code here.
-		m_catImage = [NSImage imageNamed: @"cat4.png"];
+		m_catImage = [NSImage imageNamed: @"cat3.png"];  ///activecat
+
     }
     
     return self;
